@@ -1,0 +1,34 @@
+import time
+import sys
+
+def userChoice(choice):
+    if choice == "1":
+        digital_clock()
+    elif choice == "2":
+        seconds = int(input("Enter the number of seconds to countdown: "))
+        countdown_timer(seconds)
+    else:
+        print("Invalid choice!")
+
+def digital_clock():
+    """Displays a digital clock."""
+    # Solution as follows
+    while(True):
+        # Get the current time
+        current_time = time.localtime()
+        
+        # Format the time as a string
+        time_string = time.strftime("%Y-%m-%d %H:%M:%S", current_time)
+        
+        # Print the current time
+        print("Current Time:", time_string)
+        time.sleep(1)    
+
+
+def countdown_timer():
+    """Counts down from a given number of seconds."""
+
+if __name__ == '__main__':
+    while True:
+        choice = input("Choose an option (1:Digital Clock, 2:Countdown Timer): ")
+        userChoice(choice)
