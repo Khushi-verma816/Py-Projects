@@ -1,0 +1,64 @@
+import time
+import random
+
+def choose_word():
+    words = ['Vishakha','Harsh', 'Khushi', 'Aarav', 'Keshav']
+    return random.choice(words)
+
+# It returns random numbers
+def wordDisplay(word, guesses):
+    display_word = ''
+    for char in word:
+        if char in guesses:
+            display_word += char + ' '
+        else:
+            display_word += '_ '
+    return display_word
+
+# it returns 0 or 1 according to the guess
+def winningCondition(updated_word, turns):
+    if '_' not in updated_word:
+        result = 1
+        return result
+    if turns == 0:
+        result = 0
+        return result
+
+if __name__ == '__main__':
+    name = input("What is your name? ")
+    print("Hello, " + name + ", time to play Mygame!")
+    time.sleep(1)
+    print("How are you my Sweetheart........")
+    print("Start guessing...\n")
+    time.sleep(0.5)
+    
+    word = choose_word() # it takes random word from the list
+    turns = len(word)    # it gives the length of the word
+    guesses = ''
+    
+    while turns > 0:
+        print("\nYou have", turns, 'guesses remaining')
+        print(wordDisplay(word, guesses))
+        guess = input("\nguess a character: ").lower()
+        
+        if guess in guesses:
+            print("\nYou have already tried this letter")
+            continue
+        else:
+            guesses += guess
+    
+        if guess not in word:
+            print("\nWrong, Try again")
+        
+        updated_word = wordDisplay(word, guesses)
+        turns -= 1 # decrease the turns after guessing the character
+        flag = winningCondition(updated_word, turns) # if turns are remaining user wins otherwise turns(0) user lose
+        
+        if flag == 0:   # flag--->condition
+            print("\nYou Lose")
+            print("The word was", word)
+        elif flag == 1:
+            print("\nYou won!")
+            print("You guessed", word, "correctly")
+            break
+    
