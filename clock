@@ -27,6 +27,7 @@ def digital_clock():
 
 def countdown_timer():
     """Counts down from a given number of seconds."""
+## main function
 
 if __name__ == '__main__':
     while True:
