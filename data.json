@@ -1,0 +1,11 @@
+{
+    "What is your name?": "I'm a chatbot created to assist you.",
+    "What can you do?": "I can answer your questions and provide information.",
+    "How are you?": "I'm doing well, thanks for asking!",
+    "Can you provide sample papers for [exam]?":"Absolutely! I would d be happy to help with that. Here are some sample papers for your exam: ",
+    "Can you provide notes for [Engineering Mathematics]?": "Absolutely! I can provide notes for Engineering Mathematics. Whether you need detailed explanations, key concepts, or practice problems, I have got you covered. Just let me know the specific topics or chapters youu are interested in, and I will help you find the best resources. 📚😊.",
+    "Do you have notes on [python programming]?": "Yes, I do have notes on Python programming! Whether you are a beginner or looking to dive into more advanced topics.",
+    "Do you have notes on [DSA]?": "Yes, I have notes on Data Structures and Algorithms (DSA)!",
+    "Do you have any recommended books for [DBMS]?": "Absolutely! Here are some highly recommended books for Database Management Systems (DBMS): \"Database Systems: The Complete Book\" by Hector Garcia-Molina, Jeffrey D. Ullman, and Jennifer Widom, \"Database System Concepts\" by Abraham Silberschatz, Henry F. Korth, and S. Sudarshan."
+
+}
