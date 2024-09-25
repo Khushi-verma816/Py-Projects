@@ -5,7 +5,7 @@ def choose_word():
     words = ['Vishakha','Harsh', 'Khushi', 'Aarav', 'Keshav']
     return random.choice(words)
 
-# It returns random numbers
+# It returns random numbers from the list
 def wordDisplay(word, guesses):
     display_word = ''
     for char in word:
